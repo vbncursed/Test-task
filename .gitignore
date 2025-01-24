@@ -1,3 +1,5 @@
+.DS_Store
+
 # Игнорируем зависимости
 database/node_modules/
 client/node_modules/
