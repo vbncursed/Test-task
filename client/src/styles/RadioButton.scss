@@ -1,0 +1,45 @@
+.radio-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  margin: 8px 0;
+  transition: all 0.3s ease;
+
+  input {
+    display: none; // Скрываем стандартное радио
+  }
+
+  .custom-radio {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #4A90E2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  input:checked + .custom-radio {
+    background-color: #4A90E2;
+    border-color: #4A90E2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
+  }
+
+  input:checked + .custom-radio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  &:hover .custom-radio {
+    transform: scale(1.1);
+  }
+}

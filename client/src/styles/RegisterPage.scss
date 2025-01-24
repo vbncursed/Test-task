@@ -1,0 +1,50 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e1e, #121212);
+
+  .register-box {
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: center;
+
+    h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .radio-group {
+      text-align: left;
+      margin-top: 15px;
+      color: #fff;
+
+      h4 {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+    }
+
+    .login-link {
+      color: #bbb;
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: center;
+
+      span {
+        color: #4a90e2;
+        cursor: pointer;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #67a6f7;
+        }
+      }
+    }
+  }
+}

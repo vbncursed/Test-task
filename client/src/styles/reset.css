@@ -1,0 +1,37 @@
+/* Сбрасываем отступы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные шрифты */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #121212;
+}
+
+/* Убираем стандартные стили списков */
+ul, ol {
+    list-style: none;
+}
+
+/* Убираем стандартные стили ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Убираем стандартные стили кнопок */
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+/* Улучшаем рендеринг текста */
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,102 @@
+.task-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #fff;
+  text-align: center;
+  background: #121212;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+
+  .task-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .select-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .create-task-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #4A90E2, #357ABD);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      background: linear-gradient(135deg, #357ABD, #2663A8);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    &::before {
+      content: "+";
+      font-size: 18px;
+      margin-right: 8px;
+    }
+  }
+
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .task-group {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      color: #4A90E2;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .task-card {
+      margin: 12px auto;
+    }
+  }
+}

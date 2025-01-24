@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    container_name: express-server
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    environment:
+      - PORT=5001
+      - JWT_SECRET=${JWT_SECRET}
+      - DB_PATH=${DB_PATH}
+    command: ["node", "./dist/server.js"]
+
+  client:
+    build: ./client
+    container_name: react-client
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+    volumes:
+      - ./client/dist:/usr/share/nginx/html
+    command: ["nginx", "-g", "daemon off;"]

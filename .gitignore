@@ -1,0 +1,21 @@
+# Игнорируем зависимости
+database/node_modules/
+client/node_modules/
+server/node_modules/
+
+# Игнорируем сборки
+client/dist/
+server/dist/
+
+# Игнорируем окружение
+client/.env
+server/.env
+.env
+
+# Игнорируем IDE-файлы
+client/.idea
+server/.idea
+.git
+
+# Игнорируем базу данных
+database/database.sqlite

@@ -1,0 +1,29 @@
+.task-card {
+  width: 100%;
+  max-width: 600px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  margin: 0 auto; // Центрируем карточки
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+
+  p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 3px 0;
+  }
+}
